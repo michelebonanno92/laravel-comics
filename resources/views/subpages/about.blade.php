@@ -2,7 +2,7 @@
 
 @section('page-title', 'Chi siamo')
 
-@section('main-content')
+@section('main')
 <h1>
     About | Laravel Start 1
 </h1>
