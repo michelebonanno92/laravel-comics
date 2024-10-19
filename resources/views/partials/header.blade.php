@@ -1,4 +1,4 @@
-@php
+{{-- @php
     $links = [
         [
             'url' => '/',
@@ -16,22 +16,20 @@
             'active' => false,
         ],
     ];
-@endphp
+@endphp --}}
 
 <header>
     <nav>
+        <figure>
+            <img src=" {{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo" height="60"> 
+        </figure>
         <ul>
-            @foreach ($links as $link)
-                <li>
-                    @if ($link['active'])
-                        <a href="{{ $link['url'] }}">
-                            {{ $link['label'] }}
-                        </a>
-                    @else
-                        <del>
-                            {{ $link['label'] }}
-                        </del>
-                    @endif
+            @foreach ($menuLinks as $element)
+                <li>    
+                    {{-- <a href="{{ $link['url'] }}">
+                        {{ $link['label'] }}
+                    </a> --}}
+                    <a href="#">{{ $element['name'] }}</a>
                 </li>
             @endforeach
         </ul>

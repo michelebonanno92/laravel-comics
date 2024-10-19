@@ -4,10 +4,7 @@
 
 @section('main')
 <h1>
-    Laravel Start 1
+   HOME PAGE
 </h1>
 
-<h2>
-    Ciao {{ $firstName }} {{ $lastName }}
-</h2>
 @endsection
