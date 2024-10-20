@@ -15,8 +15,8 @@
         {{-- @yield('head-imports') --}}
     </head>
     <body>
-
-        @include('partials.header')
+ 
+        @include('partials.header') 
      
         @yield('main')
 
