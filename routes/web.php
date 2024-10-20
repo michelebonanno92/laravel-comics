@@ -36,8 +36,188 @@ use Illuminate\Support\Facades\Route;
     // dd(compact('firstName', 'lastName'));
 
 Route::get('/', function () {
-    return view('welcome');
-});
+
+    $menuLinks = [
+        [
+            'name' => 'Characters',
+            'current' => 'false'
+        ],
+        [
+            'name' => 'Comics',
+            'current' => 'true'
+        ],
+        [
+            'name' => 'Movies',
+            'current' => 'false'
+        ],
+        [
+            'name' => 'Tv',
+            'current' => 'false'
+        ],
+        [
+            'name' => 'Games',
+            'current' => 'false'
+        ],
+        [
+            'name' => 'Collectibles',
+            'current' => 'false'
+        ],
+        [
+            'name' => 'Videos',
+            'current' => 'false'
+        ],
+        [
+            'name' => 'Fans',
+            'current' => 'false'
+        ],
+        [
+            'name' => 'News',
+            'current' => 'false'
+        ],
+        [
+            'name' => 'Shop',
+            'current' => 'false'
+        ],
+    ];
+
+    $menuItems = [
+        [
+            'item' => 'resources/img/buy-comics-digital-comics.png',
+            'name' => 'DIGITAL COMICS'
+        ],
+        [
+            'item' => 'resources/img/buy-comics-merchandise.png',
+            'name' => 'DC MERCHANDISE'
+        ],
+        [
+            'item' => 'resources/img/buy-comics-subscriptions.png',
+            'name' => 'SUBSCRIPTION'
+        ],
+        [
+            'item' => 'resources/img/buy-comics-shop-locator.png',
+            'name' => 'COMICS SHOP LOCATOR'
+        ],
+        [
+            'item' => 'resources/img/buy-comics-digital-comics.png',
+            'name' => 'DC POWER VISA'
+        ],
+  
+    ];
+    $menuLinksDcComics = [
+        [
+            'name' => 'Characters',
+            'linkk' => '#'
+        ],
+        [
+            'name' => 'Comics',
+            'linkk' => '#'
+        ],
+        [
+            'name' => 'Movies',
+            'linkk' => '#'
+        ],
+        [
+            'name' => 'Tv',
+            'linkk' => '#'
+        ],
+        [
+            'name' => 'Games',
+            'linkk' => '#'
+        ],
+        [
+            'name' => 'Videos',
+            'linkk' => '#'
+        ],
+        [
+            'name' => 'News',
+            'linkk' => '#'
+        ]
+    ];
+    $menuLinksShop = [
+        [
+            'name' => 'Shop DC',
+            'link' => '#'
+        ],
+        [
+            'name' => 'Shop DC Collectibles',
+            'link' => '#'
+        ],
+    ];
+    $menuLinksDc = [
+        [
+            'name' => 'Terms Of Use',
+            'link' => '#'
+        ],
+        [
+            'name' => 'Privacy policy (New)',
+            'link' => '#'
+        ],
+        [
+            'name' => 'Ad Choices',
+            'link' => '#'
+        ],
+        [
+            'name' => 'Advertising',
+            'link' => '#'
+        ],
+        [
+            'name' => 'Jobs',
+            'link' => '#'
+        ],
+        [
+            'name' => 'Subscriptions',
+            'link' => '#'
+        ],
+        [
+            'name' => 'Talent Workshops',
+            'link' => '#'
+        ],
+        [
+            'name' => 'CPSC Certificates',
+            'link' => '#'
+        ],
+        [
+            'name' => 'Ratings',
+            'link' => '#'
+        ],
+        [
+            'name' => 'Shop Help',
+            'link' => '#'
+        ],
+        [
+            'name' => 'Contact Us',
+            'link' => '#'
+        ],
+    ];
+    $menuLinksSites = [
+        [
+            'name' => 'DC',
+            'link' => '#'
+        ],
+        [
+            'name' => 'MAD Magazine',
+            'link' => '#'
+        ],
+        [
+            'name' => 'DC Kids',
+            'link' => '#'
+        ],
+        [
+            'name' => 'DC Universe',
+            'link' => '#'
+        ],
+        [
+            'name' => 'DC Power Visa',
+            'link' => '#'
+        ],
+       
+    ];
+
+    $comics = config('comics');
+
+    return view('pages.welcome', compact('menuLinks','comics','menuItems' ,'menuLinksDcComics','menuLinksShop','menuLinksDc','menuLinksSites'));
+
+})->name('homePage');
 
 Route::get('/chi-siamo', function () {
     return view('subpages.about');

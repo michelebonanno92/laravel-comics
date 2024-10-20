@@ -29,7 +29,7 @@
                     {{-- <a href="{{ $link['url'] }}">
                         {{ $link['label'] }}
                     </a> --}}
-                    <a href="#">{{ $element['name'] }}</a>
+                    <a href="#">{{ $elemen['name'] }}</a>
                 </li>
             @endforeach
         </ul>
