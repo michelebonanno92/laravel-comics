@@ -82,23 +82,23 @@ Route::get('/', function () {
 
     $menuItems = [
         [
-            'item' => 'resources/img/buy-comics-digital-comics.png',
+            'img' => 'buy-comics-digital-comics.png',
             'name' => 'DIGITAL COMICS'
         ],
         [
-            'item' => 'resources/img/buy-comics-merchandise.png',
+            'img' => 'buy-comics-merchandise.png',
             'name' => 'DC MERCHANDISE'
         ],
         [
-            'item' => 'resources/img/buy-comics-subscriptions.png',
+            'img' => 'buy-comics-subscriptions.png',
             'name' => 'SUBSCRIPTION'
         ],
         [
-            'item' => 'resources/img/buy-comics-shop-locator.png',
+            'img' => 'buy-comics-shop-locator.png',
             'name' => 'COMICS SHOP LOCATOR'
         ],
         [
-            'item' => 'resources/img/buy-comics-digital-comics.png',
+            'img' => 'buy-comics-digital-comics.png',
             'name' => 'DC POWER VISA'
         ],
   
@@ -106,31 +106,31 @@ Route::get('/', function () {
     $menuLinksDcComics = [
         [
             'name' => 'Characters',
-            'linkk' => '#'
+            'link' => '#'
         ],
         [
             'name' => 'Comics',
-            'linkk' => '#'
+            'link' => '#'
         ],
         [
             'name' => 'Movies',
-            'linkk' => '#'
+            'link' => '#'
         ],
         [
             'name' => 'Tv',
-            'linkk' => '#'
+            'link' => '#'
         ],
         [
             'name' => 'Games',
-            'linkk' => '#'
+            'link' => '#'
         ],
         [
             'name' => 'Videos',
-            'linkk' => '#'
+            'link' => '#'
         ],
         [
             'name' => 'News',
-            'linkk' => '#'
+            'link' => '#'
         ]
     ];
     $menuLinksShop = [

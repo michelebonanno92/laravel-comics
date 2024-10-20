@@ -1,17 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
 
-main {
-    background-color: lightcoral;
+.jumbotron{
+    background-image: url('/resources/img/jumbotron.jpg');
+    height: 500px;
 }
 
-.gatto-img {
-    height: 200px;
-}
 
-.gatto-bg {
-    height: 200px;
-    background-image: url('../img/gatto.webp');
-    background-size: contain;
-}
 
 

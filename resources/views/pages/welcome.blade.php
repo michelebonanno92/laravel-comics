@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('page-title', ' Dc Comics | Home')
+@section('page-title' , 'Dc Comics | Home')
 
 @section('main')
     <main>
         <div class="jumbotron">
-          
+        
         </div>
         <div>
             <h2>CURRENT SERIES</h2>
@@ -22,18 +22,22 @@
 
             </div>
         </div>
-        <div>
-            <h2>Current Items</h2>
-            <div class="row">
-                @foreach ($menuItems as $item)
-                    <div>
+        <div class="bg-blue">
+            <div>
+                <ul>
+                    @foreach ($menuItems as $item)
+                    <li>
                         <figure>
-                            <img src="{{ $item['item'] }}" :alt="{{ $item['name'] }}">
+                            <img src="{{ Vite::asset('resources/img/' . $item['img']) }}" alt="{{ $item['name'] }}">
                         </figure>
-                        <span>{{ $item['name'] }}</span>
-                    </div>
+                        <span>
+                            {{ $item['name'] }}
+                        </span>
+                    </li>
                     
                 @endforeach
+                </ul>
+             
 
             </div>
         </div>
