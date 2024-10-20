@@ -1,8 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
 
+@import "./partials/variables";
+@import "./partials/mixins";
+
+
+
 .jumbotron{
     background-image: url('/resources/img/jumbotron.jpg');
     height: 500px;
+}
+.bg-blue{
+    background-color: blue;
+    color: white;
 }
 
 

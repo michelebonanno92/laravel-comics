@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+
+@mixin reset-css{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
